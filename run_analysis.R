@@ -8,7 +8,7 @@ setwd("~/GitHub/GetCleanData")
 # Get feature labels
 featLab <- read.table(file = "./UCI_HAR_Dataset/features.txt", stringsAsFactors = F)
 featLab <- unlist(x = featLab[2], use.names = F)
-index <- grep("mean|std", featLab) #create index to subset mean and sd
+index <- grep("mean|std", featLab) #create index to subset mean and sd (includes meanFreq)
 
 # Get activity lookup table
 actLab <- read.table(file = "./UCI_HAR_Dataset/activity_Labels.txt")
@@ -56,3 +56,6 @@ sum <- select(dat, -actID) %>%
     group_by(subject, activity) %>%
     summarise_each(funs(mean)) %>%
     arrange(subject, activity)
+
+# Write data file for submission
+write.table(x = sum, file = "./tidy_data.txt", row.names = F)

@@ -1,11 +1,16 @@
 # Getting & Cleaning Data Course Project
 ### Tucker Doud
 
-Insert introduction here...
+This repo contains my submission for the Johns Hopkins Universtiy *Getting and Cleaning Data* course project. The repo includes:
+
+1. This README file;
+2. A well commented data processing script named **run_analysis.R**;
+3. A code book for the new tidy dataset; and
+4. The new tidy data set produced by the script above called **tidy_data.txt**
 
 ## Review Criteria
 
-1. 1The submitted data set is tidy.
+1. The submitted data set is tidy.
 2. The Github repo contains the required scripts.
 3. GitHub contains a code book that modifies and updates the available codebooks with the data to indicate all the variables and summaries calculated, along with units, and any other relevant information.
 4. The README that explains the analysis files is clear and understandable.
