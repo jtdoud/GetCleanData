@@ -1,4 +1,4 @@
-# Tidy Dataset Code Book
+# Tidy Data Set Code Book
 
 A data frame with 180 observations on the following 81 variables.
 
